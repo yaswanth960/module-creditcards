@@ -11,7 +11,7 @@ export function CardsHomeScreen({ navigation }: Props) {
     <View style={styles.container}>
       <Text style={styles.header}>Cards overview</Text>
       <Text style={styles.subtitle}>
-        See rewards you have earned, due dates, and personalized picks. Use
+        See rewards you have earned, due dates, an
    
       </Text>
       <PrimaryButton
