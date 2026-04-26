@@ -11,7 +11,7 @@ export function CardsHomeScreen({ navigation }: Props) {
     <View style={styles.container}>
       <Text style={styles.header}>Credit Cards</Text>
       <Text style={styles.subtitle}>
-        Manage cards and compare rewards. highghashgah hello
+        Manage cards.
       </Text>
       <PrimaryButton
         label="Next: Offers"
