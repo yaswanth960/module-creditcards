@@ -9,12 +9,13 @@ type Props = NativeStackScreenProps<CreditCardsStackParamList, 'CardsOffers'>;
 export function CardsOffersScreen({ navigation }: Props) {
   return (
     <View style={styles.container}>
-      <Text style={styles.header}>Card Offers</Text>
+      <Text style={styles.header}>Curated for you</Text>
       <Text style={styles.subtitle}>
-        Get pre-approved card offers with cashback and travel rewards.
+        Limited-time bonuses, balance-transfer options, and elevated earn
+        rates. Eligibility is subject to bank approval.
       </Text>
       <PrimaryButton
-        label="Next: Benefits"
+        label="Compare benefits"
         onPress={() => navigation.navigate('CardsBenefits')}
       />
     </View>
@@ -23,6 +24,16 @@ export function CardsOffersScreen({ navigation }: Props) {
 
 const styles = StyleSheet.create({
   container: { flex: 1, padding: 16, backgroundColor: '#fff' },
-  header: { fontSize: 22, fontWeight: '700', marginBottom: 8 },
-  subtitle: { fontSize: 14, color: '#555', marginBottom: 16 },
+  header: {
+    fontSize: 22,
+    fontWeight: '700',
+    marginBottom: 10,
+    color: '#0f172a',
+  },
+  subtitle: {
+    fontSize: 15,
+    lineHeight: 22,
+    color: '#64748b',
+    marginBottom: 18,
+  },
 });

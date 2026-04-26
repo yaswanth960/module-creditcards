@@ -24,7 +24,7 @@ export function CreditCardsNavigator() {
       <Stack.Screen
         name="CardsHome"
         component={CardsHomeScreen}
-        options={{ title: 'Cards Home' }}
+        options={{ title: 'Overview' }}
       />
       <Stack.Screen
         name="CardsOffers"

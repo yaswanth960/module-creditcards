@@ -9,12 +9,13 @@ type Props = NativeStackScreenProps<CreditCardsStackParamList, 'CardsHome'>;
 export function CardsHomeScreen({ navigation }: Props) {
   return (
     <View style={styles.container}>
-      <Text style={styles.header}>Credit Cards</Text>
+      <Text style={styles.header}>Cards overview</Text>
       <Text style={styles.subtitle}>
-        Manage cards and compare rewards...
+        See rewards you have earned, due dates, and personalized picks. Use
+        the menu to switch modules anytime.
       </Text>
       <PrimaryButton
-        label="Next: Offers"
+        label="View offers"
         onPress={() => navigation.navigate('CardsOffers')}
       />
     </View>
@@ -23,6 +24,16 @@ export function CardsHomeScreen({ navigation }: Props) {
 
 const styles = StyleSheet.create({
   container: { flex: 1, padding: 16, backgroundColor: '#fff' },
-  header: { fontSize: 22, fontWeight: '700', marginBottom: 8 },
-  subtitle: { fontSize: 14, color: '#555', marginBottom: 16 },
+  header: {
+    fontSize: 22,
+    fontWeight: '700',
+    marginBottom: 10,
+    color: '#0f172a',
+  },
+  subtitle: {
+    fontSize: 15,
+    lineHeight: 22,
+    color: '#64748b',
+    marginBottom: 18,
+  },
 });
