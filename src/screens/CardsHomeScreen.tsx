@@ -12,7 +12,7 @@ export function CardsHomeScreen({ navigation }: Props) {
       <Text style={styles.header}>Cards overview</Text>
       <Text style={styles.subtitle}>
         See rewards you have earned, due dates, and personalized picks. Use
-        the menu to switch modules anytime.
+   
       </Text>
       <PrimaryButton
         label="View offers"
